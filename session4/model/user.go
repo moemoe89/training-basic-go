@@ -8,10 +8,12 @@ type UserModel struct {
 	Address string `json:"address" gorm:"address"`
 }
 
+// contoh replace struct pointing nama tabel
 func(u UserModel) TableName() string {
 	return "user"
 }
 
+// contoh membuat fungsi validasi dari struct
 func (u UserModel) Validation() error {
 
 	if len(u.Name) < 1 {
@@ -21,6 +23,7 @@ func (u UserModel) Validation() error {
 	return nil
 }
 
+// contoh membuat fungsi
 func (u UserModel) Bebas() error {
 
 	if len(u.Name) < 1 {

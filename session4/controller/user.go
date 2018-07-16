@@ -2,7 +2,7 @@ package controller
 
 import (
 	"github.com/gin-gonic/gin"
-	"training4/model"
+	"training-basic-go/session4/model"
 	"net/http"
 	"strconv"
 )
